@@ -35,7 +35,9 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## Articles
+## Zustand articles
 - [Mastering State Management with Zustand in Next.js and React](https://dev.to/mrsupercraft/mastering-state-management-with-zustand-in-nextjs-and-react-1g26)
 
 - [Integrating API with State Management in React using Zustand](https://dev.to/geraldhamiltonwicks/integrating-api-with-state-management-in-react-using-zustand-4mje)
+
+- [Using Zustand as a state management library](https://medium.com/kocfinanstech/using-zustand-as-a-state-management-library-6893bd969526)

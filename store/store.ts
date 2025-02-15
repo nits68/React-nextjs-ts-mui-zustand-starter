@@ -6,14 +6,15 @@ import { create } from "zustand";
 interface IStore {
   counter: number;
   incrementCounter: () => void;
-  clearUsers: () => void;
-  getUsers: () => Promise<void>;
+
   unpressed: boolean;
   loading: boolean;
   success: boolean;
   error: boolean;
   data: any;
   errorData: any;
+  clearUsers: () => void;
+  getUsers: () => Promise<void>;
 }
 
 const initialState = {
@@ -25,10 +26,10 @@ const initialState = {
   errorData: null,
 };
 
-const useStore = create<IStore>((set) => ({
+const useStore = create<IStore>((set, get) => ({
   counter: 0,
   ...initialState,
-  incrementCounter: () => set((state: IStore) => ({ counter: state.counter + 1 })),
+  incrementCounter: () => set({ counter: get().counter + 1 }),
   clearUsers: () => set({ ...initialState }),
   getUsers: async () => {
     set({ ...initialState, loading: true });
@@ -38,7 +39,6 @@ const useStore = create<IStore>((set) => ({
       console.log("Data fetch ok", res.data);
     } catch (err: any) {
       console.log("Error in data fetch:", err);
-      console.error("Error in data fetch:", err);
       set({ ...initialState, unpressed: false, error: true, errorData: err.message });
     }
   },
