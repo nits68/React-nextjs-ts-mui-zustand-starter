@@ -7,7 +7,7 @@ import useStore from "../store/store";
 import styles from "./page.module.css";
 
 export default function Home() {
-  const { count, increment } = useStore();
+  const s = useStore();
 
   return (
     <div className={styles.page}>
@@ -40,7 +40,7 @@ export default function Home() {
           </a>
         </div>
         <Badge
-          badgeContent={`Count: ${count}`}
+          badgeContent={`Count: ${s.counter}`}
           color="error"
           anchorOrigin={{
             vertical: "top",
@@ -50,12 +50,32 @@ export default function Home() {
           <Button
             sx={{ textTransform: "none" }}
             variant="contained"
-            onClick={increment}
-            color={count % 2 == 0 ? "primary" : "secondary"}
+            onClick={s.incrementCounter}
+            color={s.counter % 2 == 0 ? "primary" : "secondary"}
           >
-            Hello Material UI (MUI) - Inc
+            Hello Material UI (MUI) - Increment counter
           </Button>
         </Badge>
+        <Button sx={{ textTransform: "none" }} variant="contained" disabled={s.data} onClick={s.getUsers}>
+          Execute API call - getUsers()
+        </Button>
+        <Button sx={{ textTransform: "none" }} variant="contained" disabled={!s.data} onClick={s.clearUsers}>
+          Clear users data
+        </Button>
+        <div>
+          {s.unpressed ? (
+            <h3>Users: Click "Execute API call" button</h3>
+          ) : s.loading ? (
+            <p>Loading...</p>
+          ) : s.error ? (
+            <p>Error fetching data: {s.errorData}</p>
+          ) : (
+            <div>
+              <h3>Users:</h3>
+              <ul>{s.data?.map(({ name, id }: { name: string; id: number }) => <li key={id}>{name}</li>)}</ul>
+            </div>
+          )}
+        </div>
       </main>
       <footer className={styles.footer}>
         <a

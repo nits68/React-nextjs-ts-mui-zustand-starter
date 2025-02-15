@@ -12,6 +12,9 @@
     "editor.codeActionsOnSave": [
         "source.fixAll.eslint"
     ],
+    "editor.linkedEditing": true,
+    "javascript.preferences.renameMatchingJsxTags": true,
+    "typescript.preferences.renameMatchingJsxTags": true,
     "editor.mouseWheelZoom": true,
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,
