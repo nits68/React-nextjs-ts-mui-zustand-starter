@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-hungarian",
+        "vscodeshift.mui-snippets",
+        "esbenp.prettier-vscode"
+    ]
+}

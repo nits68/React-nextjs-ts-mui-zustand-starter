@@ -1,0 +1,29 @@
+{
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.codeActionsOnSave": [
+        "source.fixAll.eslint"
+    ],
+    "editor.mouseWheelZoom": true,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 2000,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.pruneOnFetch": true,
+    "git.autofetch": true,
+    "git.autofetchPeriod": 60,
+    "cSpell.words": [
+        "ianvs",
+        "turbopack"
+    ]
+}
