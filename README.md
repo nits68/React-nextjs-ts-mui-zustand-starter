@@ -35,11 +35,19 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## Material UI articles
+## React links
+- [React reference](https://react.dev/reference/react)
 
--[Material UI vs Tailwind CSS: Which is Better for React Development?](https://www.frontendmag.com/insights/material-ui-vs-tailwind-css/)
+## Next.js links
+- [Next.js - Getting Started](https://nextjs.org/docs/app/getting-started)
 
-## Zustand articles
+## Material UI links
+- [Material UI documentation](https://mui.com/material-ui/getting-started/)
+
+- [Material UI vs Tailwind CSS: Which is Better for React Development?](https://www.frontendmag.com/insights/material-ui-vs-tailwind-css/)
+
+## Zustand links
+- [Zustand - Introduction](https://zustand.docs.pmnd.rs/getting-started/introduction)
 
 - [Mastering State Management with Zustand in Next.js and React](https://dev.to/mrsupercraft/mastering-state-management-with-zustand-in-nextjs-and-react-1g26)
 
