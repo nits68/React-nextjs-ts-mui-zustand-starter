@@ -1,18 +1,14 @@
-"use client";
-
 import * as React from "react";
 import NextLink from "next/link";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
-import CounterExample from "components/CounterExample";
 
-import ApiCallExample from "../components/ApiCallExample";
-import Copyright from "../components/Copyright";
-import ProTip from "../components/ProTip";
+import Copyright from "../../components/Copyright";
+import ProTip from "../../components/ProTip";
 
-export default function Home() {
+export default function About() {
   return (
     <Container maxWidth="lg">
       <Box
@@ -25,14 +21,14 @@ export default function Home() {
         }}
       >
         <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Material UI - Next.js - Zustand App Router example with TypeScript
+          About - Jedlik Next.js starter
         </Typography>
-        <Link href="/about" color="secondary" component={NextLink}>
-          Go to the about page
-        </Link>
+        <Box sx={{ maxWidth: "sm" }}>
+          <Button variant="contained" component={NextLink} href="/">
+            Go to the home page
+          </Button>
+        </Box>
         <ProTip />
-        <CounterExample />
-        <ApiCallExample />
         <Copyright />
       </Box>
     </Container>
