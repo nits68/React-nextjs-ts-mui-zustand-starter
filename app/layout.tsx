@@ -3,8 +3,8 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import CssBaseline from "@mui/material/CssBaseline";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 import { ThemeProvider } from "@mui/material/styles";
-import DrawerAppBar from "components/DrawerAppBar";
 
+import DrawerAppBar from "../components/DrawerAppBar";
 import theme from "../theme";
 
 export default function RootLayout(props: { children: React.ReactNode }) {
